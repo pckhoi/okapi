@@ -13,7 +13,7 @@ const libraryName = 'okapi'
 
 export default args => {
   return {
-    input: args.configDevBundle ? `src/dev.js` : `src/${libraryName}.ts`,
+    input: args.configDevBundle ? `src/dev.ts` : `src/${libraryName}.ts`,
     output: args.configDevBundle
       ? { file: 'dist/dev.umd.js', format: 'umd', sourcemap: true }
       : [
